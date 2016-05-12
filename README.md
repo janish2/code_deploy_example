@@ -1,27 +1,20 @@
-Instructions
-============
-1.) When server is booted run the following commands as root.
 
-yum -y update
 
-yum install -y aws-cli
+# Eshop
 
-cd /home/ec2-user
 
-2.) Here you will setup your AWS access, secret, and region.
 
-aws configure 
+## Usage
 
-aws s3 cp s3://aws-codedeploy-us-east-1/latest/install . --region us-east-1
 
-chmod +x ./install
 
-3.) This is simply a quick hack to get the agent running faster.
+## Developing
 
-sed -i "s/sleep(.*)/sleep(10)/" install 
 
-./install auto
 
-4.) Verify it is running.
+### Tools
 
-service codedeploy-agent status 
+Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)
+ ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))   
+
+Nodeclipse is free open-source project that grows with your contributions.
